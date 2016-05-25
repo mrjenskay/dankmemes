@@ -1,5 +1,5 @@
-document.write('<div id="header"><p class="hak">10 memes</p></div><center>');
-$i = 0;while ($i < 10){
+document.write('<div id="header"><p class="hak">5 memes</p></div><center>');
+$i = 0;while ($i < 5){
   var text = '{"memes":[' +
   '{"name":"Smoke weed everyday!!!","description":"This is Tijmen, Tijmen is a stoner." ,"file":"img/1.png"},' +
   '{"name":"Smoke weed everyday!!!","description":"This is Tijmen, Tijmen is a stoner.", "file":"img/1.png"},' +
