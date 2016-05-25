@@ -15,9 +15,4 @@ document.write('<div id="header"><p class="hak">5 memes</p></div><center><div cl
 
   obj = JSON.parse(text);
 $i = 0;while ($i < 5){
-  document.write("<div class=\"col-md-5 jumbotron\"><h1>"+obj.memes[$i].name+"</h1><br><img class=\"meme\" src='"+obj.memes[$i].file+"' /><br><br><p>"+obj.memes[$i].description+"</p><br><a href=\""+obj.memes[$i].file+"\" download><button class=\"btn btn-success\">DOWNLOAD</button></a><button class=\"btn btn-warning\">SHARE</button></div><br>");$i++;}
-
-function more() {
-$j = 5;while ($j < 10){
-  document.write("<div class=\"col-md-5 jumbotron\"><h1>"+obj.memes[$i].name+"</h1><br><img src='"+obj.memes[$j].file+"' /><br><br><p>"+obj.memes[$j].description+"</p><br><a href=\""+obj.memes[$j].file+"\" download><button class=\"btn btn-success\">DOWNLOAD</button></a><button class=\"btn btn-warning\">SHARE</button></div><br>");$j++;}
-}
+  document.write("<div class=\"col-md-5 jumbotron\"><a href='page.php?id="+$i+"'><h1>"+obj.memes[$i].name+"</h1></a><br><img class=\"meme\" src='"+obj.memes[$i].file+"' /><br><br><p>"+obj.memes[$i].description+"</p><br><a href=\""+obj.memes[$i].file+"\" download><button class=\"btn btn-success\">DOWNLOAD</button></a><button class=\"btn btn-warning\">SHARE</button></div><br>");$i++;}
