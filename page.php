@@ -29,7 +29,7 @@ $j = strip_tags(stripslashes($_GET['id']));
       '{"name":"Smoke weed everyday!!!","description":"This is Tijmen, Tijmen is a stoner.", "file":"img/1.png"}]}';
 
       obj = JSON.parse(text);
-    $i = 0;while ($i < 1){
+    for($j =0; $j < 1; $j++){
       document.write("<div class=\"col-md-5 jumbotron\"><h1>"+obj.memes[$j].name+"</h1><br><img class=\"meme\" src='"+obj.memes[$j].file+"' /><br><br><p>"+obj.memes[$j].description+"</p><br><a href=\""+obj.memes[$j].file+"\" download><button class=\"btn btn-success\">DOWNLOAD</button></a><button class=\"btn btn-warning\">SHARE</button></div><br>");$i++;}
     </script>
   </body>
